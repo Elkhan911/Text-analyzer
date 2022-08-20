@@ -19,7 +19,7 @@ body {
 
 .task__description {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .task__hints {
@@ -39,8 +39,7 @@ body {
 }
 
 .task__answer {
-  display: inline;
-  margin-right: 100px;
+  margin: 50px;
 }
 
 .task__asnwer-zone {
