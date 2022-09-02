@@ -8,26 +8,37 @@ const span2 = document.querySelector("#_span2");
 const textZone3 = document.querySelector("#_textZone3");
 const span3 = document.querySelector("#_span3");
 
-textZone1.addEventListener("blur", function () {
-  let str = textZone1.value;
-  let arr1 = str.split(" ");
+textZone1.addEventListener("keydown", function (event) {
+  if (event.key == "Enter") {
+    let str = textZone1.value;
+    let arr1 = str.split(" ");
+    console.log(arr1);
 
-  let i = 0;
-  for (i = 0; i < arr1.length; i++) {}
-  span1.textContent = i;
+    let wordCounter1 = 0;
+
+    for (i = 0; i < arr1.length; i++) {
+      if (arr1[i] !== "" && arr1[i] !== "\n") {
+        console.log(arr1[i]);
+        wordCounter1++;
+      }
+    }
+    span1.textContent = wordCounter1;
+  }
 });
 
-textZone2.addEventListener("blur", function () {
+textZone2.addEventListener("input", function () {
   let str = textZone2.value;
   let arr2 = str.split("");
 
-  let i = 0;
+  let wordCounter2 = 0;
 
-  for (i = 0; i < arr2.length; i++) {}
-  span2.textContent = i;
+  for (i = 0; i < arr2.length; i++) {
+    wordCounter2++;
+    span2.textContent = wordCounter2;
+  }
 });
 
-textZone3.addEventListener("blur", function () {
+textZone3.addEventListener("input", function () {
   let str = textZone3.value;
   let arr3 = str.split("");
 

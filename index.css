@@ -1,4 +1,4 @@
-body {
+.page {
   border: 1px solid black;
   width: 1200px;
   margin: auto;
@@ -33,6 +33,7 @@ body {
 .analyzer__text {
   width: 450px;
   height: 200px;
+  font-size: 14px;
 }
 
 .analyzer__hint {
