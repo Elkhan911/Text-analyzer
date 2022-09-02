@@ -7,58 +7,74 @@
     <title>Text-analyzer</title>
     <link rel="stylesheet" href="index.css" />
   </head>
-  <body>
-    <section class="task">
-      <h2 class="task__description">
-        Дан textarea. Пусть в него вводится текст. Сделайте так, чтобы по потери
-        фокуса под текстареа вывелось сообщение о том, сколько в этом тексте
-        слов.
-      </h2>
 
-      <div class="task__keys">
-        <textarea name="" id="_textZone1" cols="30" rows="10"> </textarea>
-      </div>
+  <body class="page">
+    <h1 class="page__header">Анализатор текстов</h1>
 
-      <div class="task__keys">
-        <p class="task__answer">
+    <section class="analyzer">
+      <div class="analyzer__box">
+        <h2 class="analyzer__header">
+          Под текстовым полем выведется информация с количеством слов в тексте
+        </h2>
+        <p class="analyzer__hint">
+          Введите произвольный текст. Затем нажмите Enter.
+        </p>
+        <textarea
+          class="analyzer__text"
+          id="_textZone1"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <p class="analyzer__value">
           Количество <u> <b>слов</b></u> в этом тексте:
-          <span id="_span1"></span>
+          <span id="_span1" class="analyzer__value analyzer__value_bold"></span>
         </p>
       </div>
     </section>
 
-    <section class="task">
-      <h2 class="task__description">
-        Модифицируйте предыдущую задачу так, чтобы также вывелось сообщение о
-        том, сколько в тексте символов.
-      </h2>
-
-      <div class="task__keys">
-        <textarea name="" id="_textZone2" cols="30" rows="10"> </textarea>
-      </div>
-
-      <div class="task__keys">
-        <p class="task__answer">
+    <section class="analyzer">
+      <div class="analyzer__box">
+        <h2 class="analyzer__header">
+          Под текстовым полем выведется информация с количеством символов в
+          тексте
+        </h2>
+        <p class="analyzer__hint">
+          Введите произвольный текст. Затем нажмите Enter.
+        </p>
+        <textarea
+          class="analyzer__text"
+          name=""
+          id="_textZone2"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <p class="analyzer__value">
           Количество <u> <b>символов</b></u> в этом тексте:
-          <span id="_span2"></span>
+          <span class="analyzer__value analyzer__value_bold" id="_span2"></span>
         </p>
       </div>
     </section>
 
-    <section class="task">
-      <h2 class="task__description">
-        Модифицируйте предыдущую задачу так, чтобы также вывелось сообщение о
-        том, сколько в тексте символов за вычетом пробелов.
-      </h2>
+    <section class="analyzer">
+      <div class="analyzer__box">
+        <h2 class="analyzer__header">
+          Под текстовым полем выведется информация с количеством символов в
+          тексте за вычетом пробелов.
+        </h2>
+        <p class="analyzer__hint">
+          Введите произвольный текст. Затем нажмите Enter.
+        </p>
+        <textarea
+          class="analyzer__text"
+          name=""
+          id="_textZone3"
+          cols="30"
+          rows="10"
+        ></textarea>
 
-      <div class="task__keys">
-        <textarea name="" id="_textZone3" cols="30" rows="10"> </textarea>
-      </div>
-
-      <div class="task__keys">
-        <p class="task__answer">
-          Количество <u> <b>символов</b></u> в этом тексте:
-          <span id="_span3"></span>
+        <p class="analyzer__value">
+          Количество <u> <b>символов</b></u> в этом тексте за вычетом пробелов:
+          <span class="analyzer__value analyzer__value_bold" id="_span3"></span>
         </p>
       </div>
     </section>
