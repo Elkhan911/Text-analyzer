@@ -1,10 +1,9 @@
-// Variables of Task One
 const textZone1 = document.querySelector("#_textZone1");
 const span1 = document.querySelector("#_span1");
-// Variables of Task Two
+
 const textZone2 = document.querySelector("#_textZone2");
 const span2 = document.querySelector("#_span2");
-// Variables of Task Three
+
 const textZone3 = document.querySelector("#_textZone3");
 const span3 = document.querySelector("#_span3");
 
