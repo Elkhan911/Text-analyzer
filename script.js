@@ -10,8 +10,8 @@ const span3 = document.querySelector("#_span3");
 
 textZone1.addEventListener("keydown", function (event) {
   if (event.key == "Enter") {
-    let str = textZone1.value;
-    let arr1 = str.split(" ");
+    let str1 = textZone1.value;
+    let arr1 = str1.split(" ");
     console.log(arr1);
 
     let wordCounter1 = 0;
@@ -27,8 +27,8 @@ textZone1.addEventListener("keydown", function (event) {
 });
 
 textZone2.addEventListener("input", function () {
-  let str = textZone2.value;
-  let arr2 = str.split("");
+  let str2 = textZone2.value;
+  let arr2 = str2.split("");
 
   let wordCounter2 = 0;
 
@@ -39,20 +39,15 @@ textZone2.addEventListener("input", function () {
 });
 
 textZone3.addEventListener("input", function () {
-  let str = textZone3.value;
-  let arr3 = str.split("");
+  let str3 = textZone3.value;
+  let arr3 = str3.split("");
 
-  let k = 0;
+  let wordCounter3 = 0;
 
-  textZone3.addEventListener("keydown", function (event) {
-    for (let i = 0; i, arr3.length; i++) {
-      k++;
-      if (event.key == "" || event.key == " ") {
-        console.log("probel");
-        k = k + 0;
-      }
+  for (i = 0; i < arr3.length; i++) {
+    if (arr3[i] !== " ") {
+      wordCounter3++;
+      span3.textContent = wordCounter3;
     }
-  });
-
-  span3.textContent = k;
+  }
 });
